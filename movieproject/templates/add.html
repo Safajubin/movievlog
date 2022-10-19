@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+  <input type="text" name="name" placeholder="Enter movie name"><br>
+    <input type="text" name="desc" placeholder="Enter movie description"><br>
+    <input type="text" name="year" placeholder="Enter movie year"><br>
+    <input type="file" name="img"><br>
+    <input type="submit" value="add">
+</form>
+</body>
+</html>
